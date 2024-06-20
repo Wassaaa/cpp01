@@ -6,7 +6,7 @@
 #    By: aklein <aklein@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/16 17:15:14 by aklein            #+#    #+#              #
-#    Updated: 2024/06/21 00:47:23 by aklein           ###   ########.fr        #
+#    Updated: 2024/06/21 01:15:02 by aklein           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,10 @@ SRC_DIR				=	.
 
 CCF_STRICT			=	-Wall -Wextra -Werror -g
 
-SRCS				=	Zombie.cpp
+SRCS				=	Zombie.cpp \
+						newZombie.cpp \
+						randomChump.cpp \
+						main.cpp
 
 OBJECTS				=	$(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
 

@@ -6,8 +6,8 @@
 			"request": "launch",
 			"name": "vdbg ex00",
 			"debugger": "gdb",
-			"program": "${workspaceFolder}/ex00/megaphone",
-			"args": ["${input:args}"],
+			"program": "${workspaceFolder}/ex00/zombie",
+			"args": [],
 			"cwd": "${workspaceFolder}/ex00",
 		},
 		{
