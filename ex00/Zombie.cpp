@@ -14,4 +14,3 @@ Zombie::~Zombie()
 {
 	std::cout << this->name <<  " has been destroyed!\n";
 }
-
