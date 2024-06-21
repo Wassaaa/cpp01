@@ -58,6 +58,7 @@
 		"__verbose_abort": "cpp",
 		"ios": "cpp",
 		"locale": "cpp",
-		"chrono": "cpp"
+		"chrono": "cpp",
+		"fstream": "cpp"
 	}
 }
