@@ -19,6 +19,15 @@
 			"args": [],
 			"cwd": "${workspaceFolder}/ex01",
 		},
+		{
+			"type": "vgdb",
+			"request": "launch",
+			"name": "vdbg ex03",
+			"debugger": "gdb",
+			"program": "${workspaceFolder}/ex03/weapons",
+			"args": [],
+			"cwd": "${workspaceFolder}/ex03",
+		},
 	],
 	"inputs": [
 		{
