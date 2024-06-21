@@ -2,10 +2,12 @@
 
 int	main()
 {
-	Zombie *z1 = newZombie("Aris");
-	z1->announce();
-	delete z1;
+	int N = 10;
 
-	randomChump("chump1");
-	randomChump("chump2");
+	Zombie *z1 = zombieHorde(N, "Al");
+
+	for (int i = 0; i < N; i++)
+		z1[i].announce();
+	delete[] z1;
+	return 0;
 }

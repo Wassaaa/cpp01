@@ -15,11 +15,10 @@
 			"request": "launch",
 			"name": "vdbg ex01",
 			"debugger": "gdb",
-			"program": "${workspaceFolder}/ex01/phone_book",
+			"program": "${workspaceFolder}/ex01/zombie_horde",
 			"args": [],
 			"cwd": "${workspaceFolder}/ex01",
-
-		}
+		},
 	],
 	"inputs": [
 		{

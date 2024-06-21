@@ -5,9 +5,15 @@ void	Zombie::announce(void)
 	std::cout << this->name << ": BraiiiiiiinnnzzzZ...\n";
 }
 
-Zombie::Zombie(std::string new_name)
+void	Zombie::set_name(std::string new_name)
 {
 	this->name = new_name;
+	std::cout <<"Zombie name set to: " << new_name << "\n";
+}
+
+Zombie::Zombie(void)
+{
+	std::cout <<"Created a zombie\n";
 }
 
 Zombie::~Zombie()
