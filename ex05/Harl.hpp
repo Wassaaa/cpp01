@@ -2,6 +2,7 @@
 # define HARL_HPP
 
 # include <iostream>
+# include <unordered_map>
 
 class Harl
 {
@@ -15,8 +16,9 @@ private:
 	void info(void);
 	void warning(void);
 	void error(void);
-
 	typedef void (Harl::*HarlMemFn)(void);
+	std::unordered_map<std::string, HarlMemFn> complaintMap;
+
 };
 
 #endif

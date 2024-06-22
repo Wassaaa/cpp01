@@ -1,14 +1,7 @@
 #include "Harl.hpp"
-#include <unordered_map>
 
 void Harl::complain(std::string level)
 {
-	std::unordered_map<std::string, HarlMemFn> complaintMap = {
-		{"DEBUG", &Harl::debug},
-		{"INFO", &Harl::info},
-		{"WARNING", &Harl::warning},
-		{"ERROR", &Harl::error},
-	};
 	auto it = complaintMap.find(level);
 	if (it != complaintMap.end())
 		(this->*(it->second))();
@@ -38,7 +31,12 @@ void Harl::error(void)
 
 Harl::Harl()
 {
-
+	complaintMap = {
+		{"DEBUG", &Harl::debug},
+		{"INFO", &Harl::info},
+		{"WARNING", &Harl::warning},
+		{"ERROR", &Harl::error},
+	};
 }
 
 Harl::~Harl()
